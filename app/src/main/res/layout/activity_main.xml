@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rjt.currentnews.MainActivity">
+
+
+    <Button
+        android:id="@+id/nationalButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="56dp"
+        android:layout_toStartOf="@+id/internationalButton"
+        android:onClick="nationalIntent"
+        android:text="National News" />
+
+    <Button
+        android:id="@+id/internationalButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/nationalButton"
+        android:layout_alignBottom="@+id/nationalButton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="13dp"
+        android:onClick="internationalIntent"
+        android:text="International News" />
+
+    <Button
+        android:id="@+id/businessButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/nationalButton"
+        android:layout_below="@+id/nationalButton"
+        android:layout_marginTop="65dp"
+        android:onClick="businessIntent"
+        android:text="Business News" />
+
+    <Button
+        android:id="@+id/sportsNews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/scienceButton"
+        android:layout_alignEnd="@+id/internationalButton"
+        android:layout_marginEnd="24dp"
+        android:onClick="sportsIntent"
+        android:text="Sports News" />
+
+    <Button
+        android:id="@+id/scienceButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/businessButton"
+        android:layout_below="@+id/businessButton"
+        android:layout_marginTop="73dp"
+        android:text="Science News" />
+
+    <Button
+        android:id="@+id/techButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tech News"
+        android:layout_alignBaseline="@+id/scienceButton"
+        android:layout_alignBottom="@+id/scienceButton"
+        android:layout_alignEnd="@+id/sportsNews" />
+</RelativeLayout>

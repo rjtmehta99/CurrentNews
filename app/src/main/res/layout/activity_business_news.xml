@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context="com.rjt.currentnews.businessNews">
+
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <ImageButton
+            android:id="@+id/blButton"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/blico" />
+
+        <ImageButton
+            android:id="@+id/teButton"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/teico" />
+
+        <ImageButton
+            android:id="@+id/ftButton"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/ftico" />
+
+        <ImageButton
+            android:id="@+id/twsjButton"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/wjsico" />
+    </GridLayout>
+</RelativeLayout>
